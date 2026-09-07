@@ -10,7 +10,7 @@
 [![Location](https://img.shields.io/badge/LOCATION-PESHAWAR_PK-0D1117?style=for-the-badge&logo=googlemaps&logoColor=00E5FF)](#)
 [![Education](https://img.shields.io/badge/B.S._COMPUTER_SCIENCE-UAP-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
 [![Security+](https://img.shields.io/badge/SECURITY%2B-TARGET_DEC_2026-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
-[![Email](https://img.shields.io/badge/SECURE_COMMS-VISAL2105@AUP.EDU.PK-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visal2105@aup.edu.pk)
+[![Email](https://img.shields.io/badge/SECURE_COMMS-VISALSATTAR.DEV-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visalsattar.dev@gmail.com)
 
 </div>
 <br>
