@@ -1,38 +1,38 @@
 <div align="center">
 
 # VISAL SATTAR
-### NETWORK DEFENSE | INTRUSION DETECTION | APPLIED MACHINE LEARNING
+### NETWORK DEFENSE | COMPUTER VISION | APPLIED MACHINE LEARNING
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=00E5FF&center=true&vCenter=true&width=620&lines=%3E_whoami%3A_visal_sattar;%3E_capturing_live_traffic_with_scapy...;%3E_scoring_flows%3A_random_forest_%2B_autoencoder...;%3E_pytest%3A_248_passed" alt="Terminal Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=00E5FF&center=true&vCenter=true&width=700&lines=%3E_BS_COMPUTER_SCIENCE_2026;%3E_BUILT_AN_AI-ASSISTED_INTRUSION_DETECTION_SYSTEM;%3E_CAPTURING_LIVE_PACKETS_WITH_SCAPY...;%3E_FINE-TUNING_YOLOv8_FOR_WASTE_DETECTION...;%3E_SEEKING_ENTRY-LEVEL_SOC_ROLES" alt="Terminal Typing SVG" />
 </p>
 
 [![Location](https://img.shields.io/badge/LOCATION-PESHAWAR_PK-0D1117?style=for-the-badge&logo=googlemaps&logoColor=00E5FF)](#)
-[![Education](https://img.shields.io/badge/B.S._COMPUTER_SCIENCE-UAP_(EXP._DEC_2026)-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
-[![Security+](https://img.shields.io/badge/SECURITY%2B-EXAM_DEC_2026-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
+[![Education](https://img.shields.io/badge/B.S._COMPUTER_SCIENCE-MAY_2026-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
+[![Security+](https://img.shields.io/badge/SECURITY%2B-IN_PROGRESS_DEC_2026-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
 [![Email](https://img.shields.io/badge/EMAIL-VISALSATTAR.DEV-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visalsattar.dev@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-VISALSATTAR-0D1117?style=for-the-badge&logo=linkedin&logoColor=00E5FF)](https://linkedin.com/in/visalsattar)
+
+[LinkedIn](https://linkedin.com/in/visalsattar) · [GitHub](https://github.com/visalsattar)
 
 </div>
 <br>
 
-### 🖧 ABOUT
+### 🖧 CORE FOCUS & CAPABILITIES
 
-I'm a Computer Science student at The University of Agriculture, Peshawar. My coursework and final-year project are done, and the degree is expected in December 2026. I'm looking for an entry-level SOC or cybersecurity analyst role.
+Computer Science graduate (BS, May 2026, The University of Agriculture, Peshawar). I build network security tools and machine-learning applications: capturing live traffic, scoring it with trained models, and showing the results in a real-time dashboard. I'm looking for an entry-level SOC or cybersecurity analyst role.
 
-Most of my work is on the network side: capturing live traffic, turning packets into flow features, scoring them with ML models, and getting alerts in front of an analyst quickly. I also care about testing claims before I make them, which is why the IDS repo documents what doesn't work yet as well as what does.
-
-- 🛡️ **Security & networking:** packet capture (Scapy, Npcap), Wireshark, Nmap, TCP/IP, threat-intel enrichment (GeoIP, AbuseIPDB), alert severity classification
-- ⚙️ **Systems:** Linux, Windows, PowerShell, Docker / Docker Compose, Redis Streams, Flask
-- 🧪 **ML & testing:** scikit-learn, TensorFlow/Keras, pytest
-- 🎯 **Looking for:** SOC Analyst · Junior Cybersecurity Analyst · Security-focused software roles
+- 🛡️ **Network Security:** Live packet capture, intrusion detection, network traffic analysis, GeoIP and AbuseIPDB lookups
+- 🔧 **Hands-on Tools:** Wireshark, Nmap, Scapy, Npcap, Linux, Windows, Docker
+- 👁️ **Computer Vision:** YOLOv8 object detection and segmentation, dataset preparation, fine-tuning
+- ⚙️ **Systems & Infrastructure:** Docker Compose, Redis Streams, Flask, Socket.IO
+- 🎯 **Looking For:** SOC Analyst | Junior Cybersecurity Analyst | Security or ML Software Engineer
 
 ---
 
-### 🛡️ AI-BASED INTRUSION DETECTION SYSTEM
+### 🛡️ FEATURED PROJECT 01: AI-BASED INTRUSION DETECTION SYSTEM (IDS)
 **[Repository →](https://github.com/visalsattar/AI-Based-Intrusion-Detection-System-for-Real-Time-Network-Threat-Detection)** · Final-year project, Nov 2025 – May 2026
 
-A network IDS that sniffs live traffic, builds 78 CICFlowMeter-style features per flow, and scores each flow with a Random Forest fused with an Autoencoder trained on benign traffic. Alerts go through Redis Streams to a React dashboard. A CNN was trained and benchmarked offline for comparison but isn't in the live path, because it needs 100-flow windows that live capture can't provide.
+> My final year project (Nov 2025 – May 2026): a real-time pipeline that captures network traffic, scores it with a Random Forest and an Autoencoder trained on CICIDS2017, and sends enriched alerts to a React dashboard. A CNN was trained offline for comparison and is not part of the live pipeline.
 
 ```mermaid
 graph LR
@@ -50,36 +50,60 @@ graph LR
     class A,H highlight;
 ```
 
-What the numbers are, and what they aren't:
+- **Live Capture:** A Scapy sniffer runs on the Windows host through Npcap (as Administrator) and captures TCP and UDP traffic. My own feature extractor rebuilds the 78 CICFlowMeter flow features the models were trained on from packet headers and timing.
+- **Results:** Evaluated on a chronological held-out split (45,149 flows) of the CICIDS2017 DDoS file (225,745 rows). The Random Forest reached 99.50% F1. The Autoencoder reached 52.98% F1 (58.09% precision, 48.71% recall) at its operating point. Both numbers are as measured, and they cover DDoS traffic only.
+- **Real-Time Alerts:** Detections flow through Redis Streams to Flask and out to the React dashboard over Socket.IO, enriched with GeoIP and AbuseIPDB data. Unconfirmed anomaly alerts are capped at MEDIUM severity so they can't trigger blocking.
+- **Deployment:** Redis, Flask, and React run in Docker Compose; capture stays on the host. The backend waits for Redis to pass its healthcheck before it starts, so a slow Redis start doesn't crash it.
+- **Testing:** I checked data cleaning, alert severity thresholds, and service startup by hand, and confirmed a constructed test alert reaches the dashboard end to end.
+- **Not Done Yet:** No latency benchmark on live traffic (so no speed claims), a pytest suite that is only scaffolded, and no attack testing on real network hardware.
 
-- On a 45,149-flow held-out CICIDS2017 DDoS/benign split (chronological, no shuffling), the Random Forest scores 99.50% F1 and the fused live rule scores 99.69% F1. These are offline results on one attack type.
-- Final packet to prediction takes 98 ms median and 115 ms p95 on synthetic flows. Redis publishing stays under 2.2 ms p99.
-- 248 pytest tests cover preprocessing, train/test leakage, fusion logic, feature parity against CICFlowMeter reference fixtures, API auth, and the optional IP auto-blocking.
-- The Docker setup drops all Linux capabilities. The opt-in sniffer service gets only `NET_RAW`, and `NET_ADMIN` stays off unless auto-blocking is deliberately enabled. Redis and the API bind to localhost with a password.
-- **Known limitation:** in controlled LAN tests the model stays quiet on normal traffic but misses a fast TCP flood, because the training "DDoS" class is slow LOIC-style traffic. Live generalisation is the open problem I'm working on now.
+**Tech Stack:** Python 3.11 | Scapy | Npcap | TensorFlow/Keras | scikit-learn | Flask | Redis Streams | Socket.IO | React | Docker Compose
 
-**Stack:** Python 3.11 · Scapy · scikit-learn · TensorFlow · Flask · Redis · Socket.IO · React · Docker · pytest · PowerShell
+**Link:** https://github.com/visalsattar/AI-Based-Intrusion-Detection-System-for-Real-Time-Network-Threat-Detection
 
 ---
 
-### 🎯 YOLOv8 UNDERWATER TRASH DETECTION
+### 🎯 FEATURED PROJECT 02: YOLOv8 WASTE DETECTION & SEGMENTATION ENGINE
 **[Repository →](https://github.com/visalsattar/yolo_detection_app)** · Personal project, Feb 2024 – Dec 2024
 
-YOLOv8 segmentation model fine-tuned on the TrashCan underwater dataset (22 classes, 0.71 box mAP@50), served through a Flask app that takes an uploaded image and returns labelled detections. I also trained on Trash-ICRA19, Drinking Waste and UAVVaste before choosing TrashCan.
+A Flask web app (Feb 2024 – Dec 2024) that takes an uploaded image and returns detected and segmented waste items, using YOLOv8 models fine-tuned on the ICRA Trash and Drinking Waste datasets.
 
-**Stack:** Python · YOLOv8 · PyTorch · OpenCV · Flask
+```mermaid
+graph LR
+    A((Uploaded Image)) --> B[OpenCV / Python: <br> Data Preparation]
+    B --> C{YOLOv8 PyTorch Models}
+    C --> D[Object Bounding Box Detection]
+    C --> E[Instance Segmentation]
+    D --> F[Flask Web Application]
+    E --> F
+    F --> G[Structured Results <br> & Visual Output]
+
+    classDef default fill:#0D1117,stroke:#00E5FF,stroke-width:1px,color:#E6EDF3;
+    classDef highlight fill:#00E5FF,stroke:#00E5FF,color:#000000;
+    class A,G highlight;
+```
+
+- **Model Fine-Tuning:** Fine-tuned YOLOv8 detection and segmentation models on waste categories from the ICRA datasets.
+- **Web Service:** A Flask app that accepts image uploads and returns structured bounding-box results.
+- **Data Preparation:** Cleaned the data, normalized bounding boxes, and applied validation augmentation with OpenCV and Python.
+
+**Tech Stack:** Python | YOLOv8 | PyTorch | OpenCV | Flask | Jupyter Notebook
+
+**Link:** https://github.com/visalsattar/yolo_detection_app
 
 ---
 
-### 💼 EXPERIENCE
+### 💼 PROFESSIONAL EXPERIENCE
 
-**Web Development & Database Intern** · Ministry of Agriculture, Bureau of Agriculture Information Department · *Jun 2023 – Dec 2023*
-
-Built responsive internal web pages (HTML, CSS, JavaScript, Bootstrap), designed SQL schemas and reporting queries, and wrote a JavaScript time-tracking tool for staff.
+**Web Development & Database Intern | Ministry of Agriculture — Bureau of Agriculture Information Dept.**
+*Jun 2023 – Dec 2023*
+- Built responsive intranet web pages with HTML5, CSS3, JavaScript, and Bootstrap so staff could use them on phones, tablets, and desktops.
+- Designed relational SQL schemas and wrote the queries used for internal data extraction and reporting.
+- Wrote a JavaScript time-tracking tool for internal use.
 
 ---
 
-### 📜 CERTIFICATIONS
+### 📜 CERTIFICATIONS & TRAINING
 
-- **Google Cybersecurity Professional Certificate**, Google (Coursera), completed May 2026
-- **CompTIA Security+**, exam planned December 2026
+- **Google Cybersecurity Professional Certificate** — Google (Coursera), completed May 2026
+- **CompTIA Security+** — in progress, exam planned for Dec 2026
