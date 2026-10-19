@@ -51,11 +51,11 @@ graph LR
 ```
 
 - **Live Capture:** A Scapy sniffer runs on the Windows host through Npcap (as Administrator) and captures TCP and UDP traffic. My own feature extractor rebuilds the 78 CICFlowMeter flow features the models were trained on from packet headers and timing.
-- **Results:** Evaluated on a chronological held-out split (45,149 flows) of the CICIDS2017 DDoS file (225,745 rows). The Random Forest reached 99.50% F1. The Autoencoder reached 52.98% F1 (58.09% precision, 48.71% recall) at its operating point. Both numbers are as measured, and they cover DDoS traffic only.
+- **Results:** Evaluated on a chronological held-out split (45,149 flows) of the CICIDS2017 DDoS file (225,745 rows). The Random Forest reached 99.50% F1. The Autoencoder reached 53.78% F1 (59.78% precision, 48.88% recall) at its operating point. Both numbers are as measured, and they cover DDoS traffic only.
 - **Real-Time Alerts:** Detections flow through Redis Streams to Flask and out to the React dashboard over Socket.IO, enriched with GeoIP and AbuseIPDB data. Unconfirmed anomaly alerts are capped at MEDIUM severity so they can't trigger blocking.
 - **Deployment:** Redis, Flask, and React run in Docker Compose; capture stays on the host. The backend waits for Redis to pass its healthcheck before it starts, so a slow Redis start doesn't crash it.
 - **Testing:** I checked data cleaning, alert severity thresholds, and service startup by hand, and confirmed a constructed test alert reaches the dashboard end to end.
-- **Not Done Yet:** No latency benchmark on live traffic (so no speed claims), a pytest suite that is only scaffolded, and no attack testing on real network hardware.
+- **Not Done Yet:** No end-to-end capture-to-browser latency measurement (only Redis-to-dashboard delivery, 2.5 ms median, is measured), a pytest suite that is only scaffolded, and no attack testing on real network hardware.
 
 **Tech Stack:** Python 3.11 | Scapy | Npcap | TensorFlow/Keras | scikit-learn | Flask | Redis Streams | Socket.IO | React | Docker Compose
 
