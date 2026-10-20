@@ -8,7 +8,7 @@
 </p>
 
 [![Location](https://img.shields.io/badge/LOCATION-PESHAWAR_PK-0D1117?style=for-the-badge&logo=googlemaps&logoColor=00E5FF)](#)
-[![Education](https://img.shields.io/badge/B.S._COMPUTER_SCIENCE-MAY_2026-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
+[![Education](https://img.shields.io/badge/B.S._COMPUTER_SCIENCE-OCT_2026-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
 [![Security+](https://img.shields.io/badge/SECURITY%2B-IN_PROGRESS_DEC_2026-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
 [![Email](https://img.shields.io/badge/EMAIL-VISALSATTAR.DEV-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visalsattar.dev@gmail.com)
 
@@ -19,7 +19,7 @@
 
 ### 🖧 CORE FOCUS & CAPABILITIES
 
-Computer Science graduate (BS, May 2026, The University of Agriculture, Peshawar). I build network security tools and machine-learning applications: capturing live traffic, scoring it with trained models, and showing the results in a real-time dashboard. I'm looking for an entry-level SOC or cybersecurity analyst role.
+Computer Science graduate (BS, Oct 2026, The University of Agriculture, Peshawar). I build network security tools and machine-learning applications: capturing live traffic, scoring it with trained models, and showing the results in a real-time dashboard. I'm looking for an entry-level SOC or cybersecurity analyst role.
 
 - 🛡️ **Network Security:** Live packet capture, intrusion detection, network traffic analysis, GeoIP and AbuseIPDB lookups
 - 🔧 **Hands-on Tools:** Wireshark, Nmap, Scapy, Npcap, Linux, Windows, Docker
