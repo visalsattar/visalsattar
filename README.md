@@ -30,7 +30,7 @@ Computer Science graduate (BS, Oct 2026, The University of Agriculture, Peshawar
 ---
 
 ### 🛡️ FEATURED PROJECT 01: AI-BASED INTRUSION DETECTION SYSTEM (IDS)
-**[Repository →](https://github.com/visalsattar/AI-Based-Intrusion-Detection-System-for-Real-Time-Threat-Detection)** · Final-year project, Nov 2025 – May 2026
+**[Repository →](https://github.com/visalsattar/AI-Based-Intrusion-Detection-System-for-Real-Time-Threat-Detection)** · Final-year project, Jan 2025 – May 2026
 
 > My final year project (Nov 2025 – May 2026): a real-time pipeline that captures network traffic, scores it with a Random Forest and an Autoencoder trained on CICIDS2017, and sends enriched alerts to a React dashboard. A CNN was trained offline for comparison and is not part of the live pipeline.
 
@@ -64,7 +64,7 @@ graph LR
 ---
 
 ### 🎯 FEATURED PROJECT 02: YOLOv8 WASTE DETECTION & SEGMENTATION ENGINE
-**[Repository →](https://github.com/visalsattar/yolo_detection_app)** · Personal project, Feb 2024 – Dec 2024
+**[Repository →]([https://github.com/visalsattar/yolo_detection_app](https://github.com/visalsattar/Underwater_Trash_Detection_with_YOLOv8))** · Personal project, Feb 2024 – Dec 2024
 
 A Flask web app (Feb 2024 – Dec 2024) that takes an uploaded image and returns detected and segmented waste items, using YOLOv8 models fine-tuned on the ICRA Trash and Drinking Waste datasets.
 
@@ -89,7 +89,7 @@ graph LR
 
 **Tech Stack:** Python | YOLOv8 | PyTorch | OpenCV | Flask | Jupyter Notebook
 
-**Link:** https://github.com/visalsattar/yolo_detection_app
+**Link:** https://github.com/visalsattar/Underwater_Trash_Detection_with_YOLOv8
 
 ---
 
