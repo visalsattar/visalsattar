@@ -30,7 +30,7 @@ Computer Science graduate (BS, May 2026, The University of Agriculture, Peshawar
 ---
 
 ### 🛡️ FEATURED PROJECT 01: AI-BASED INTRUSION DETECTION SYSTEM (IDS)
-**[Repository →](https://github.com/visalsattar/AI-Based-Intrusion-Detection-System-for-Real-Time-Network-Threat-Detection)** · Final-year project, Nov 2025 – May 2026
+**[Repository →](https://github.com/visalsattar/AI-Based-Intrusion-Detection-System-for-Real-Time-Threat-Detection)** · Final-year project, Nov 2025 – May 2026
 
 > My final year project (Nov 2025 – May 2026): a real-time pipeline that captures network traffic, scores it with a Random Forest and an Autoencoder trained on CICIDS2017, and sends enriched alerts to a React dashboard. A CNN was trained offline for comparison and is not part of the live pipeline.
 
