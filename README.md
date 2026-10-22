@@ -9,7 +9,7 @@
 
 [![Location](https://img.shields.io/badge/LOCATION-PESHAWAR_PK-0D1117?style=for-the-badge&logo=googlemaps&logoColor=00E5FF)](#)
 [![Education](https://img.shields.io/badge/BS_(HONS)_COMPUTER_SCIENCE-OCT_2026-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
-[![Security+](https://img.shields.io/badge/SECURITY%2B-IN_PROGRESS_DEC_2026-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
+[![Security+](https://img.shields.io/badge/SECURITY%2B-IN_PROGRESS_EARLY_2027-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
 [![Email](https://img.shields.io/badge/EMAIL-VISALSATTAR.DEV-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visalsattar.dev@gmail.com)
 
 [LinkedIn](https://linkedin.com/in/visalsattar) · [GitHub](https://github.com/visalsattar)
@@ -93,7 +93,7 @@ graph LR
 
 ### 💼 PROFESSIONAL EXPERIENCE
 
-**Web Development & Database Intern | Ministry of Agriculture — Bureau of Agriculture Information Dept.**
+**Web Development & Database Intern | Bureau of Agriculture Information KP, Peshawar.**
 *Jun 2023 – Dec 2023*
 - Built responsive intranet web pages with HTML5, CSS3, JavaScript, and Bootstrap so staff could use them on phones, tablets, and desktops.
 - Designed relational SQL schemas and wrote the queries used for internal data extraction and reporting.
@@ -104,4 +104,4 @@ graph LR
 ### 📜 CERTIFICATIONS & TRAINING
 
 - **Google Cybersecurity Professional Certificate** — Google (Coursera), completed May 2026
-- **CompTIA Security+** — in progress, exam planned for Dec 2026
+- **CompTIA Security+** — in progress, exam planned for early 2027
