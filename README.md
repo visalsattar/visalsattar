@@ -11,6 +11,7 @@
 [![Education](https://img.shields.io/badge/BS_(HONS)_COMPUTER_SCIENCE-OCT_2026-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
 [![Security+](https://img.shields.io/badge/SECURITY%2B-IN_PROGRESS_EARLY_2027-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
 [![Email](https://img.shields.io/badge/EMAIL-VISALSATTAR.DEV-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visalsattar.dev@gmail.com)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-VISALSATTAR.GITHUB.IO-0D1117?style=for-the-badge&logo=githubpages&logoColor=00E5FF)](https://visalsattar.github.io)
 
 [LinkedIn](https://linkedin.com/in/visalsattar) · [GitHub](https://github.com/visalsattar)
 
