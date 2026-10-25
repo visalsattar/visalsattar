@@ -10,10 +10,10 @@
 [![Location](https://img.shields.io/badge/LOCATION-PESHAWAR_PK-0D1117?style=for-the-badge&logo=googlemaps&logoColor=00E5FF)](#)
 [![Education](https://img.shields.io/badge/BS_(HONS)_COMPUTER_SCIENCE-OCT_2026-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
 [![Security+](https://img.shields.io/badge/SECURITY%2B-IN_PROGRESS_EARLY_2027-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
-[![Email](https://img.shields.io/badge/EMAIL-VISALSATTAR.DEV-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visalsattar.dev@gmail.com)
+[![Email](https://img.shields.io/badge/EMAIL-VISALSATTAR.DEV%40GMAIL.COM-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visalsattar.dev@gmail.com)
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-VISALSATTAR.GITHUB.IO-0D1117?style=for-the-badge&logo=githubpages&logoColor=00E5FF)](https://visalsattar.github.io)
 
-[LinkedIn](https://linkedin.com/in/visalsattar) · [GitHub](https://github.com/visalsattar)
+[LinkedIn](https://linkedin.com/in/visalsattar) · [GitHub](https://github.com/visalsattar) · [Portfolio](https://visalsattar.github.io)
 
 </div>
 <br>
@@ -31,19 +31,19 @@ Computer Science graduate (BS (Hons), Oct 2026, The University of Agriculture, P
 ---
 
 ### 🛡️ FEATURED PROJECT 01: AI-BASED INTRUSION DETECTION SYSTEM (IDS)
-**[Repository →](https://github.com/visalsattar/AI-Based-Intrusion-Detection-System-for-Real-Time-Threat-Detection)** · Final-year project, Jan 2025 – May 2026
+**[Repository →](https://github.com/visalsattar/AI-Based-Intrusion-Detection-System-for-Real-Time-Threat-Detection)** · Final-year project (three-person team; I led the engineering), Jan 2025 – May 2026
 
-> My final year project (Jan 2025 – May 2026): a real-time pipeline that captures network traffic, scores it with a Random Forest and an Autoencoder trained on CICIDS2017, and sends enriched alerts to a React dashboard. A CNN was trained offline for comparison and is not part of the live pipeline.
+> My final year project: a real-time pipeline that captures network traffic, scores it with a Random Forest and an Autoencoder trained on CICIDS2017, and sends enriched alerts to a React dashboard. A CNN was trained offline for comparison and is not part of the live pipeline.
 
 ```mermaid
 graph LR
     A((Live Network Traffic)) --> B[Scapy + Npcap: <br> Packet Capture]
     B --> C[Flow Feature <br> Extraction]
-    C --> D{Fusion Layer}
-    D --> E[Random Forest]
-    D --> F[Autoencoder]
-    E --> G[(Redis Streams)]
-    F --> G
+    C --> E[Random Forest]
+    C --> F[Autoencoder]
+    E --> D{Fusion Layer}
+    F --> D
+    D --> G[(Redis Streams)]
     G --> H[React Dashboard <br> + GeoIP / AbuseIPDB]
 
     classDef default fill:#0D1117,stroke:#00E5FF,stroke-width:1px,color:#E6EDF3;
@@ -94,7 +94,7 @@ graph LR
 
 ### 💼 PROFESSIONAL EXPERIENCE
 
-**Web Development & Database Intern | Bureau of Agriculture Information KP, Peshawar.**
+**Web Development & Database Intern | Bureau of Agriculture Information KP**
 *Jun 2023 – Dec 2023*
 - Built responsive intranet web pages with HTML5, CSS3, JavaScript, and Bootstrap so staff could use them on phones, tablets, and desktops.
 - Designed relational SQL schemas and wrote the queries used for internal data extraction and reporting.
