@@ -8,19 +8,19 @@
 </p>
 
 [![Location](https://img.shields.io/badge/LOCATION-PESHAWAR_PK-0D1117?style=for-the-badge&logo=googlemaps&logoColor=00E5FF)](#)
-[![Education](https://img.shields.io/badge/BS_(HONS)_COMPUTER_SCIENCE-OCT_2026-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
+[![Education](https://img.shields.io/badge/BS_COMPUTER_SCIENCE-OCT_2026-0D1117?style=for-the-badge&logo=databricks&logoColor=00E5FF)](#)
 [![Security+](https://img.shields.io/badge/SECURITY%2B-IN_PROGRESS_EARLY_2027-0D1117?style=for-the-badge&logo=comptia&logoColor=00E5FF)](#)
 [![Email](https://img.shields.io/badge/EMAIL-VISALSATTAR.DEV%40GMAIL.COM-0D1117?style=for-the-badge&logo=minutemailer&logoColor=00E5FF)](mailto:visalsattar.dev@gmail.com)
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-VISALSATTAR.GITHUB.IO-0D1117?style=for-the-badge&logo=githubpages&logoColor=00E5FF)](https://visalsattar.github.io)
 
-[LinkedIn](https://linkedin.com/in/visalsattar) · [GitHub](https://github.com/visalsattar) · [Portfolio](https://visalsattar.github.io)
+[LinkedIn](https://linkedin.com/in/visalsattar) · [GitHub](https://github.com/visalsattar) · [Portfolio](https://visalsattar.github.io) · visalsattar.dev@gmail.com
 
 </div>
 <br>
 
 ### 🖧 CORE FOCUS & CAPABILITIES
 
-Computer Science graduate (BS (Hons), Oct 2026, The University of Agriculture, Peshawar). I build network security tools and machine-learning applications, and I like finding where my own systems break. I'm open to entry-level cybersecurity roles and working toward offensive security and AI red teaming.
+Computer Science graduate (BS, Oct 2026, The University of Agriculture, Peshawar). I build network security tools and machine-learning applications, and I like finding where my own systems break. I'm open to entry-level cybersecurity roles and working toward offensive security and AI red teaming.
 
 - 🛡️ **Network Security:** Live packet capture, intrusion detection, network traffic analysis, GeoIP and AbuseIPDB lookups
 - 🔧 **Hands-on Tools:** Scapy, Npcap, Linux, Windows, PowerShell, Docker, Git
